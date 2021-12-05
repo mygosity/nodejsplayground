@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "build/index.js",
 	"scripts": {
-		"start": ".\\node_modules\\.bin\\tsc-watch --onSuccess \"npx babel-node build\\index.js\""
+		"start": ".\\node_modules\\.bin\\tsc-watch --onSuccess \"npx babel-node build\\index.js\"",
+		"startm": "./node_modules/.bin/tsc-watch --onSuccess \"npx babel-node build/index.js\""
 	},
 	"repository": {
 		"type": "git",

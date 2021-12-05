@@ -1,7 +1,7 @@
-import { readFile } from '../utils';
+import { dirSlash, readFile } from '../utils';
 
 export function handleAnswerPart2() {
-	const inputText = readFile('\\inputs\\mygosity\\input001.txt');
+	const inputText = readFile(`${dirSlash}inputs${dirSlash}mygosity${dirSlash}input001.txt`);
 	const list = inputText.split('\n').map((e) => parseInt(e));
 
 	let answer = 0;
@@ -12,7 +12,7 @@ export function handleAnswerPart2() {
 }
 
 export function handleAnswerPart1() {
-	const inputText = readFile('\\inputs\\mygosity\\input001.txt');
+	const inputText = readFile(`${dirSlash}inputs${dirSlash}mygosity${dirSlash}input001.txt`);
 	const list = inputText.split('\n').map((e) => parseInt(e));
 
 	const list2 = inputText.split('\n');
